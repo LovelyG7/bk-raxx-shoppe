@@ -8,6 +8,7 @@ import {} from './components/navbar.css'
 import { ShopContextProvider } from './context/shop-context';
 import { About } from './pages/about/about.jsx';
 import {} from './pages/about/about.css'
+import { Checkout } from './pages/checkout/checkout';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/" element={<Shop />} />
         <Route path="/cart" element={<Cart />}/>
         <Route path="/about" element={<About />}></Route>
+        <Route path="/checkout" element={<Checkout />}></Route>
       </Routes>
      </Router>
      </ShopContextProvider>
